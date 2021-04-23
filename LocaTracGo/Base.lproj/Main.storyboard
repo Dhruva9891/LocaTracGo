@@ -16,31 +16,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HLc-eR-GDC">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tox-Sk-Pbb" customClass="GMSMapView">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <subviews>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gMc-48-gmF">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
-                                    </mapView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="gMc-48-gmF" secondAttribute="trailing" id="43w-Q6-4TL"/>
-                                    <constraint firstItem="gMc-48-gmF" firstAttribute="leading" secondItem="HLc-eR-GDC" secondAttribute="leading" id="Fed-LV-q6N"/>
-                                </constraints>
-                            </stackView>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="HLc-eR-GDC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1OT-0y-GI6"/>
-                            <constraint firstItem="HLc-eR-GDC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PKh-xd-kLy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HLc-eR-GDC" secondAttribute="trailing" id="iT6-gC-tFU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HLc-eR-GDC" secondAttribute="bottom" id="niQ-9d-O5U"/>
+                            <constraint firstItem="Tox-Sk-Pbb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7E6-8r-wyo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tox-Sk-Pbb" secondAttribute="bottom" id="McM-IC-WXV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tox-Sk-Pbb" secondAttribute="trailing" id="MtJ-Hm-5TC"/>
+                            <constraint firstItem="Tox-Sk-Pbb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OvZ-XN-CRr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0ur-tR-eK6"/>
                     <connections>
-                        <outlet property="mapView" destination="gMc-48-gmF" id="zEX-Ac-1nF"/>
+                        <outlet property="mapView" destination="Tox-Sk-Pbb" id="Sy9-gT-51N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
